@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floya-Self</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Extra blur effect for background */
+        .bg-blur::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://w.wallhaven.cc/full/nk/wallhaven-nkl5o7.jpg') center/cover no-repeat;
+            filter: blur(8px);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-black text-white flex items-center justify-center h-screen relative bg-blur">
+
+    <div class="bg-neutral-800/80 backdrop-blur-lg rounded-2xl p-10 w-[700px] h-[300px] flex items-center space-x-8 shadow-lg">
+        <!-- Profile Picture -->
+        <img src="https://raw.githubusercontent.com/Floya-dev/floyaWebsiteSelf/refs/heads/main/eyes_in_dark1.png" alt="Your Photo" class="rounded-full w-40 h-40 border-2 border-purple-400">
+        
+        <!-- Text Section -->
+        <div class="text-left">
+            <h1 class="text-3xl font-mono">> Hi, I'm Floya</h1>
+            <p class="text-purple-300 text-base mt-2">Curiousity, is what moves me</p>
+            
+            <!-- Bullet Point Description -->
+            <ul class="mt-4 text-gray-300 text-base space-y-2 list-disc list-inside">
+                <li>At the moment I'm studying Cyber Security</li>
+                <li>Over the past year, I became a huge Linux and overall FOSS enthusiast</li>
+                <li>I Use Arch Btw</li>
+            </ul>
+
+            <!-- Links -->
+            <div class="mt-5">
+                <a href="https://github.com/Floya-dev" class="text-purple-400 hover:underline text-lg">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
